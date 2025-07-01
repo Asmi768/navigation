@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IIT Bombay Techfest - 3D Navbar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+      background: #121212;
+      color: white;
+    }
+
+    /* 3D Navbar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #1c1c1c;
+      padding: 15px 0;
+      box-shadow: 0 4px 15px rgba(0, 255, 255, 0.2);
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: #00fff7;
+      text-decoration: none;
+      padding: 12px 20px;
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 8px;
+      background: linear-gradient(145deg, #1a1a1a, #1f1f1f);
+      box-shadow: 5px 5px 15px #0a0a0a, -5px -5px 15px #2a2a2a;
+    }
+
+    .navbar a:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 255, 255, 0.4);
+      color: #fff;
+      background: linear-gradient(145deg, #00b3b3, #006666);
+    }
+
+    /* Sections */
+    section {
+      padding: 100px 20px;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    #home { background: #1f1f1f; }
+    #events { background: #2b2b2b; }
+    #speakers { background: #333; }
+    #register { background: #2b2b2b; }
+    #contact { background: #1f1f1f; }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #00fff7;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 3D Navigation Bar -->
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#events">Events</a>
+    <a href="#speakers">Speakers</a>
+    <a href="#register">Register</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Page Sections -->
+  <section id="home">
+    <h1>Welcome to Techfest, IIT Bombay</h1>
+    <p>India’s largest science and technology festival.</p>
+  </section>
+
+  <section id="events">
+    <h1>Events</h1>
+    <p>Robotics, Hackathons, Workshops, Gaming, and more.</p>
+  </section>
+
+  <section id="speakers">
+    <h1>Speakers</h1>
+    <p>Hear from global innovators and tech leaders.</p>
+  </section>
+
+  <section id="register">
+    <h1>Register</h1>
+    <p>Be a part of something extraordinary.</p>
+  </section>
+
+  <section id="contact">
+    <h1>Contact Us</h1>
+    <p>Email: contact@techfest.org | Instagram: @iitb_techfest</p>
+  </section>
+
+</body>
+</html>
